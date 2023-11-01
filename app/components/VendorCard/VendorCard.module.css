@@ -1,0 +1,43 @@
+.cardContainer {
+    width: 100%;
+    min-height: 160px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.vendorChars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.companySpecialty,
+.companyBtn {
+    text-transform: uppercase;
+}
+
+.companyBtn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    background: #1990A7;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .25s ease-in;
+}
+
+.companyBtn:hover {
+    background: #90E0EF;
+    transition: .25s ease-in;
+}

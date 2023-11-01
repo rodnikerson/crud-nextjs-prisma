@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Vendor {
+  id           Int       @id @default(autoincrement())
+  name         String
+  description  String
+  slug         String    @unique
+  price        PRICE
+  location_id  Int
+  specialty_id Int
+  created_at   DateTime  @default(now())
+  updated_at   DateTime  @updatedAt
+  products     Product[]
+  location     Location  @relation(fields: [location_id], references: [id])
+  specialty    Specialty @relation(fields: [specialty_id], references: [id])
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  price       String
+  vendor_id   Int
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  vendor      Vendor   @relation(fields: [vendor_id], references: [id])
+}
+
+model Location {
+  id         Int      @id @default(autoincrement())
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  vendors    Vendor[]
+}
+
+model Specialty {
+  id         Int      @id @default(autoincrement())
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  vendors    Vendor[]
+}
+
+enum PRICE {
+  CHEAP
+  REGULAR
+  EXPENSIVE
+}

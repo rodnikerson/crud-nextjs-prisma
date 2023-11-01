@@ -1,0 +1,24 @@
+.container {
+    width: 320px;
+}
+
+.nameAndPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specialtyTxt {
+    text-transform: uppercase;
+}
+
+.locationAndSpecialty {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.description {
+    margin-top: 16px;
+    text-align: justify;
+}
