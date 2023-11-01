@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CRUD - NextJS + Prisma
 
-## Getting Started
+Este é um projeto de exemplo que demonstra a criação de um aplicativo web simples com funcionalidade de CRUD (Create, Read, Update, Delete) usando as tecnologias NextJS, Node e Prisma. O aplicativo consiste em duas páginas onde os usuários podem criar, editar e excluir um produto relacionado ao vendor escolhido.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Stack utilizada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Front-end:** NextJS e CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Back-end:** NextJS, Node, Prisma, PostgreSQL e Supabase
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![CRUD - NextJS + Prisma - Mobile 1](https://github.com/rodnikerson/crud-react-gql/assets/108701108/d9ff2001-be8f-45a6-ad91-4d30e4d97e6e)
+![CRUD - NextJS + Prisma - Mobile 2](https://github.com/rodnikerson/crud-react-gql/assets/108701108/3a6a56fd-fcef-4984-9972-3d7864ae1565)
 
-## Learn More
+![CRUD - NextJS + Prisma - Desktop 1](https://github.com/rodnikerson/crud-react-gql/assets/108701108/649748bd-0c35-4d0b-b3f6-426f59360443)
+![CRUD - NextJS + Prisma - Desktop 2](https://github.com/rodnikerson/crud-react-gql/assets/108701108/e1acc7ad-8a7d-4015-b983-13f517ad3a69)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demonstração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://github.com/rodnikerson/crud-react-gql/assets/108701108/d35a666d-bdf2-4968-ac6a-93331b7b2a97
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@rodnikerson](https://www.github.com/rodnikerson)
